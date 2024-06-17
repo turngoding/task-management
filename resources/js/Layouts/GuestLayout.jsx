@@ -1,5 +1,6 @@
 import ApplicationLogo from '@/Components/ApplicationLogo';
 import { Link } from '@inertiajs/react';
+import '@coreui/coreui/dist/css/coreui.min.css'
 
 export default function Guest({ children }) {
     return (
