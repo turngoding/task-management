@@ -4,24 +4,25 @@ module.exports = {
     ecmaVersion: 2020, // Use the latest ecmascript standard
     sourceType: 'module', // Allows using import/export statements
     ecmaFeatures: {
-      jsx: true // Enable JSX since we're using React
-    }
+      jsx: true, // Enable JSX since we're using React
+    },
   },
   settings: {
     react: {
-      version: 'detect'
-    }
+      version: 'detect',
+    },
   },
   env: {
     browser: true,
     amd: true,
-    node: true
+    node: true,
   },
   extends: [
     'eslint:recommended',
     'plugin:react/recommended',
     'plugin:react-hooks/recommended',
-    'plugin:prettier/recommended'
+    'plugin:prettier/recommended',
+    'airbnb',
   ],
   plugins: ['prettier'],
   rules: {
@@ -33,11 +34,11 @@ module.exports = {
       'error',
       {},
       {
-        usePrettierrc: true
-      }
+        usePrettierrc: true,
+      },
     ],
     'react/react-in-jsx-scope': 'off',
     'react/prop-types': 'off',
-    'no-console': 2
-  }
+    'no-console': 2,
+  },
 };
